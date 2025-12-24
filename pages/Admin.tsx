@@ -127,7 +127,7 @@ export const Admin: React.FC<AdminProps> = ({ items, onAdd, onUpdate, onDelete, 
     const currentStatus = STATUS_OPTIONS.find(s => s.value === formData.status);
 
     return (
-        <div className="space-y-12 animate-fade-in pb-32">
+        <div className="space-y-12 pb-32">
             <div className="relative text-center pt-28 pb-4 px-4 overflow-hidden min-h-[25vh] flex flex-col items-center justify-center">
                 <div className="w-full flex flex-col items-center z-20 relative">
                     <div className="inline-block px-5 py-2 glass rounded-full text-xs font-bold uppercase tracking-widest text-white/50 mb-8 backdrop-blur-md bg-black/20">Registry Access Level 01</div>

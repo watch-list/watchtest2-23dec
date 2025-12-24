@@ -35,8 +35,8 @@ export const ParallaxPosterWall: React.FC<ParallaxPosterWallProps> = ({ posters 
                 WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 80%)'
             }}
         >
-            {/* Darken overlay for better text readability on top */}
-            <div className="absolute inset-0 bg-[#050505]/40 z-10" />
+            {/* Darken overlay for better text readability on top - Reduced opacity */}
+            <div className="absolute inset-0 bg-[#050505]/5 z-10" />
             
             {/* The Wall - Large scale/radius retained, but poster size reverted to smaller dimensions */}
             <div className="flex gap-4 md:gap-6 justify-center items-start w-[200%] -ml-[50%] -mt-[50%] h-[200%] rotate-12 scale-125">

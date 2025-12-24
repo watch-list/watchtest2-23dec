@@ -80,11 +80,10 @@ export const Home: React.FC<HomeProps> = ({ items, onInfo }) => {
     };
 
     return (
-        <div className="space-y-32 animate-fade-in pb-20">
+        <div className="space-y-32 pb-20">
             {/* Massive Cinema Hero */}
             <section className="relative min-h-[80vh] flex flex-col items-center justify-center pt-32 overflow-hidden">
                 <ParallaxPosterWall posters={items.map(i => i.poster)} />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] pointer-events-none rounded-full mix-blend-screen"></div>
                 
                 <div className="w-full flex justify-center z-20 relative">
                     <div className="text-center max-w-5xl px-4 space-y-12">

@@ -24,7 +24,7 @@ export const SearchResults: React.FC<SearchResultsProps> = ({ items, onInfo }) =
     }, [items, query]);
 
     return (
-        <div className="space-y-16 animate-fade-in pb-32">
+        <div className="space-y-16 pb-32">
             <div className="relative pt-32 pb-10 text-center overflow-hidden min-h-[40vh] flex flex-col items-center justify-center">
                 <ParallaxPosterWall posters={items.map(i => i.poster)} />
                 <div className="w-full flex flex-col items-center z-20 relative">

@@ -57,11 +57,10 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categoryIds, title, 
     };
 
     return (
-        <div className="space-y-16 animate-fade-in pb-32">
+        <div className="space-y-16 pb-32">
             {/* Massive Header Section - Increased height to 70vh for uniformity */}
             <div className="relative pt-32 pb-10 text-center overflow-hidden min-h-[70vh] flex flex-col items-center justify-center">
                 <ParallaxPosterWall posters={items.map(i => i.poster)} />
-                <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vh] bg-gradient-to-br ${categoryInfo?.gradient} blur-[180px] opacity-20 pointer-events-none -z-10`} />
                 
                 <div className="w-full flex flex-col items-center z-20 relative">
                     <div className="inline-block px-5 py-2 glass rounded-full text-xs font-bold uppercase tracking-widest text-white/50 mb-8 backdrop-blur-md bg-black/20">
