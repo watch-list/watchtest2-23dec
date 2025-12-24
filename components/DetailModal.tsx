@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { WatchItem } from '../types';
-import { STATUS_OPTIONS } from '../constants';
+import { WatchItem } from '../types.ts';
+import { STATUS_OPTIONS } from '../constants.tsx';
 
 interface DetailModalProps {
     item: WatchItem | null;
@@ -78,7 +78,6 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, onClose, onEdit,
                                     <div className="text-2xl font-black tracking-tight text-white/90">{item.year}</div>
                                 </div>
                                 <div className="space-y-1">
-                                    <div className="text-white/30 text-[10px] font-black uppercase tracking-[0.4em]">Personal Score</div>
                                     <div className="text-2xl font-black tracking-tight text-[#EDB600]">★ {item.myRating}<span className="text-xs text-white/10 ml-1"> / 10</span></div>
                                 </div>
                             </div>

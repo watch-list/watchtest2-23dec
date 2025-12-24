@@ -1,10 +1,10 @@
 
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { WatchItem } from '../types';
-import { CATEGORIES } from '../constants';
-import { WatchCard } from '../components/WatchCard';
-import { ParallaxPosterWall } from '../components/ParallaxPosterWall';
+import { WatchItem } from '../types.ts';
+import { CATEGORIES } from '../constants.tsx';
+import { WatchCard } from '../components/WatchCard.tsx';
+import { ParallaxPosterWall } from '../components/ParallaxPosterWall.tsx';
 
 interface HomeProps {
     items: WatchItem[];

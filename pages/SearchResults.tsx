@@ -1,9 +1,9 @@
 
 import React, { useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
-import { WatchItem } from '../types';
-import { WatchCard } from '../components/WatchCard';
-import { ParallaxPosterWall } from '../components/ParallaxPosterWall';
+import { WatchItem } from '../types.ts';
+import { WatchCard } from '../components/WatchCard.tsx';
+import { ParallaxPosterWall } from '../components/ParallaxPosterWall.tsx';
 
 interface SearchResultsProps {
     items: WatchItem[];

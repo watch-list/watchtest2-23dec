@@ -1,5 +1,5 @@
 
-import { CategoryInfo, WatchItem } from './types';
+import { CategoryInfo, WatchItem } from './types.ts';
 
 export const CATEGORIES: CategoryInfo[] = [
     { 

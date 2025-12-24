@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { WatchItem, Category, Status } from '../types';
-import { CATEGORIES, STATUS_OPTIONS, GENRE_OPTIONS } from '../constants';
+import { WatchItem, Category, Status } from '../types.ts';
+import { CATEGORIES, STATUS_OPTIONS, GENRE_OPTIONS } from '../constants.tsx';
 
 interface AdminProps {
     items: WatchItem[];

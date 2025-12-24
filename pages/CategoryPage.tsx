@@ -1,9 +1,9 @@
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { WatchItem, Category, Status } from '../types';
-import { CATEGORIES, STATUS_OPTIONS } from '../constants';
-import { WatchCard } from '../components/WatchCard';
-import { ParallaxPosterWall } from '../components/ParallaxPosterWall';
+import { WatchItem, Category, Status } from '../types.ts';
+import { CATEGORIES, STATUS_OPTIONS } from '../constants.tsx';
+import { WatchCard } from '../components/WatchCard.tsx';
+import { ParallaxPosterWall } from '../components/ParallaxPosterWall.tsx';
 
 interface CategoryPageProps {
     categoryIds: Category[];

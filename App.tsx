@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useWatchListStore } from './store/useWatchListStore';
-import { Layout } from './components/Layout';
-import { Home } from './pages/Home';
-import { CategoryPage } from './pages/CategoryPage';
-import { Admin } from './pages/Admin';
-import { DetailModal } from './components/DetailModal';
-import { SearchResults } from './pages/SearchResults';
+import { useWatchListStore } from './store/useWatchListStore.ts';
+import { Layout } from './components/Layout.tsx';
+import { Home } from './pages/Home.tsx';
+import { CategoryPage } from './pages/CategoryPage.tsx';
+import { Admin } from './pages/Admin.tsx';
+import { DetailModal } from './components/DetailModal.tsx';
+import { SearchResults } from './pages/SearchResults.tsx';
 
 const App: React.FC = () => {
     const { items, addEntry, updateEntry, deleteEntry, importData, clearAll, isLoaded } = useWatchListStore();

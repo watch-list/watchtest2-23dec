@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import { WatchItem, Category } from '../types';
-import { INITIAL_DATA } from '../constants';
+import { WatchItem, Category } from '../types.ts';
+import { INITIAL_DATA } from '../constants.tsx';
 
 export const useWatchListStore = () => {
     const [items, setItems] = useState<WatchItem[]>([]);

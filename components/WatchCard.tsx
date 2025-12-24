@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { WatchItem } from '../types';
-import { STATUS_OPTIONS } from '../constants';
+import { WatchItem } from '../types.ts';
+import { STATUS_OPTIONS } from '../constants.tsx';
 
 interface WatchCardProps {
     item: WatchItem;
