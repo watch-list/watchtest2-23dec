@@ -183,7 +183,7 @@ export const Home: React.FC<HomeProps> = ({ items, onInfo }) => {
                                             boxShadow: `0 0 15px ${cat.color}80`
                                         }}
                                     ></div>
-                                    <h2 className="font-title text-lg md:text-3xl font-black uppercase tracking-tighter text-white">
+                                    <h2 className="font-title text-lg md:text-3xl font-black uppercase tracking-tighter text-white whitespace-nowrap">
                                         {cat.name}
                                     </h2>
                                 </div>

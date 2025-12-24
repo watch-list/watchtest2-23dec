@@ -29,12 +29,8 @@ export const ParallaxPosterWall: React.FC<ParallaxPosterWallProps> = ({ posters 
 
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Reduced opacity to 15 for better visibility */}
-            <div className="absolute inset-0 bg-[#000000] opacity-15 z-10" />
-            
-            {/* Lighter vignetting */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-[#000000]/80 z-10" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#000000] via-transparent to-[#000000]/80 z-10" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#000000_100%)] z-10 opacity-[0.15]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10 opacity-[0.15]" />
             
             {/* The Wall - Large scale/radius retained, but poster size reverted to smaller dimensions */}
             <div className="flex gap-4 md:gap-6 justify-center items-start w-[200%] -ml-[50%] -mt-[50%] h-[200%] rotate-12 scale-125">
@@ -51,10 +47,10 @@ export const ParallaxPosterWall: React.FC<ParallaxPosterWallProps> = ({ posters 
                     >
                         {/* Quadrupled content (4 lines/sets) for seamless loop and density */}
                         {[...colPosters, ...colPosters, ...colPosters, ...colPosters].map((src: string, idx: number) => (
-                            <div key={idx} className="w-full aspect-[2/3] rounded-xl overflow-hidden shadow-2xl bg-white/5 opacity-90">
+                            <div key={idx} className="w-full aspect-[2/3] rounded-xl overflow-hidden shadow-2xl bg-white/5 opacity-40">
                                 <img 
                                     src={src} 
-                                    className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500" 
+                                    className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-500" 
                                     alt="" 
                                     loading="lazy"
                                 />
