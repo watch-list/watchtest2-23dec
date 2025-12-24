@@ -29,8 +29,8 @@ export const ParallaxPosterWall: React.FC<ParallaxPosterWallProps> = ({ posters 
 
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#000000_100%)] z-10 opacity-[0.15]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10 opacity-[0.15]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#000000_100%)] z-10 opacity-[0.05]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10 opacity-[0.05]" />
             
             {/* The Wall - Large scale/radius retained, but poster size reverted to smaller dimensions */}
             <div className="flex gap-4 md:gap-6 justify-center items-start w-[200%] -ml-[50%] -mt-[50%] h-[200%] rotate-12 scale-125">

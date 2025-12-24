@@ -79,7 +79,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, onClose, onEdit,
                                 </div>
                                 <div className="space-y-1">
                                     <div className="text-white/30 text-[10px] font-black uppercase tracking-[0.4em]">Personal Score</div>
-                                    <div className="text-2xl font-black tracking-tight text-yellow-400">★ {item.myRating}<span className="text-xs text-white/10 ml-1"> / 10</span></div>
+                                    <div className="text-2xl font-black tracking-tight text-[#EDB600]">★ {item.myRating}<span className="text-xs text-white/10 ml-1"> / 10</span></div>
                                 </div>
                             </div>
 

@@ -68,7 +68,7 @@ export const CategoryPage: React.FC<CategoryPageProps> = ({ categoryIds, title, 
                         Database 01
                     </div>
                     <h1 className="font-title text-4xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] mb-12 drop-shadow-2xl">
-                        <span className={`bg-gradient-to-br ${categoryInfo?.gradient} bg-clip-text text-transparent opacity-100 saturate-[1.15]`}>
+                        <span style={{ color: categoryInfo?.color }} className="opacity-100 saturate-[1.15]">
                             {title}
                         </span>
                     </h1>

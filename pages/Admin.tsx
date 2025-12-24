@@ -150,7 +150,7 @@ export const Admin: React.FC<AdminProps> = ({ items, onAdd, onUpdate, onDelete, 
                     <input type="file" ref={fileInputRef} onChange={handleImport} className="hidden" accept=".json" />
                 </div>
                 <div className="glass-premium p-10 rounded-[2.5rem] flex items-center justify-center border-white/5">
-                    <button onClick={() => { if(confirm('Permanently purge entire collection?')) onClearAll() }} className="w-full py-8 text-red-500 hover:bg-red-500/10 rounded-[2rem] text-xs font-bold uppercase tracking-widest border border-red-500/20 transition-all active:scale-95">Clear Entire Library</button>
+                    <button onClick={() => { if(confirm('Permanently purge entire collection?')) onClearAll() }} className="w-full py-8 text-[#C20000] hover:bg-[#C20000]/10 rounded-[2rem] text-xs font-bold uppercase tracking-widest border border-[#C20000]/20 transition-all active:scale-95">Clear Entire Library</button>
                 </div>
             </div>
 
@@ -238,7 +238,7 @@ export const Admin: React.FC<AdminProps> = ({ items, onAdd, onUpdate, onDelete, 
                                     <div>
                                         <label className="block text-xs font-bold text-white/40 uppercase tracking-widest mb-4">rating</label>
                                         <div className="flex items-center gap-5 glass-input rounded-2xl px-8">
-                                            <span className="text-yellow-500 font-black text-xl">★</span>
+                                            <span className="text-[#EDB600] font-black text-xl">★</span>
                                             <input type="number" min="1" max="10" value={formData.myRating} onChange={e => setFormData({...formData, myRating: parseInt(e.target.value)})} className="w-full bg-transparent py-6 text-white font-black text-2xl focus:outline-none" />
                                         </div>
                                     </div>
@@ -325,7 +325,7 @@ export const Admin: React.FC<AdminProps> = ({ items, onAdd, onUpdate, onDelete, 
                                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                                     <span className="text-xs font-bold px-5 py-2 glass bg-white/5 rounded-full uppercase text-white/40 tracking-widest border border-white/5">{currentCategory?.name || "Uncategorized"}</span>
                                     <span className="text-xs font-bold px-5 py-2 glass bg-white/5 rounded-full uppercase text-white/40 tracking-widest border border-white/5">{formData.year || "2025"}</span>
-                                    <span className="text-xs font-bold px-5 py-2 glass bg-white/5 rounded-full uppercase text-yellow-500/60 tracking-widest border border-yellow-500/10">★ {formData.myRating}.0</span>
+                                    <span className="text-xs font-bold px-5 py-2 glass bg-white/5 rounded-full uppercase text-[#EDB600]/60 tracking-widest border border-[#EDB600]/10">★ {formData.myRating}.0</span>
                                 </div>
                             </div>
 
@@ -377,7 +377,7 @@ export const Admin: React.FC<AdminProps> = ({ items, onAdd, onUpdate, onDelete, 
                                                     <div className="text-base font-black text-white uppercase tracking-tight leading-none group-hover:text-primary-light transition-colors">{item.title}</div>
                                                     <div className="flex items-center gap-2 text-[10px] font-bold text-white/30 uppercase tracking-widest">
                                                         <span>{item.year}</span>
-                                                        <span className="text-yellow-500/40">★ {item.myRating}</span>
+                                                        <span className="text-[#EDB600]/40">★ {item.myRating}</span>
                                                     </div>
                                                 </div>
                                             </td>
@@ -405,7 +405,7 @@ export const Admin: React.FC<AdminProps> = ({ items, onAdd, onUpdate, onDelete, 
                                                     </button>
                                                     <button 
                                                         onClick={() => { if(confirm('Purge this entry from library?')) onDelete(item.id) }} 
-                                                        className="w-10 h-10 flex items-center justify-center glass bg-white/5 hover:bg-red-500 text-white/20 hover:text-white rounded-xl transition-all border border-white/5"
+                                                        className="w-10 h-10 flex items-center justify-center glass bg-white/5 hover:bg-[#C20000] text-white/20 hover:text-white rounded-xl transition-all border border-white/5"
                                                         title="Purge Entry"
                                                     >
                                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

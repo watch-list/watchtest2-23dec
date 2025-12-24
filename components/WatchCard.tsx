@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { WatchItem } from '../types';
 import { STATUS_OPTIONS } from '../constants';
@@ -69,7 +70,7 @@ export const WatchCard: React.FC<WatchCardProps> = ({ item, onInfo }) => {
                 <div className="flex items-center gap-2 text-[10px] font-medium text-white/60">
                     <span>{item.year}</span>
                     <span>•</span>
-                    <span className="text-yellow-400">★ {item.myRating}</span>
+                    <span className="text-[#EDB600]">★ {item.myRating}</span>
                 </div>
             </div>
         </div>

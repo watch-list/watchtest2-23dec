@@ -6,56 +6,56 @@ export const CATEGORIES: CategoryInfo[] = [
         id: 'kdrama', 
         name: 'K-DRAMA', 
         color: '#A42EFF', 
-        gradient: 'from-[#1a0a2e] to-[#A42EFF]', 
+        gradient: 'from-[#A42EFF] to-[#D699FF]', 
         path: '/kdrama' 
     },
     { 
         id: 'kmovie', 
         name: 'K-MOVIE', 
         color: '#A42EFF', 
-        gradient: 'from-[#1a0a2e] to-[#A42EFF]', 
+        gradient: 'from-[#A42EFF] to-[#D699FF]', 
         path: '/kmovie' 
     },
     { 
         id: 'hdrama', 
         name: 'H-DRAMA', 
         color: '#5045D9', 
-        gradient: 'from-[#0a0a2e] to-[#5045D9]', 
+        gradient: 'from-[#5045D9] to-[#8C85FF]', 
         path: '/hdrama' 
     },
     { 
         id: 'hmovie', 
         name: 'H-MOVIE', 
         color: '#5045D9', 
-        gradient: 'from-[#0a0a2e] to-[#5045D9]', 
+        gradient: 'from-[#5045D9] to-[#8C85FF]', 
         path: '/hmovie' 
     },
     { 
         id: 'bdrama', 
         name: 'B-DRAMA', 
-        color: '#E81717', 
-        gradient: 'from-[#2e0a0a] to-[#E81717]', 
+        color: '#C20000', 
+        gradient: 'from-[#C20000] to-[#FF6666]', 
         path: '/bdrama' 
     },
     { 
         id: 'bmovie', 
         name: 'B-MOVIE', 
-        color: '#E81717', 
-        gradient: 'from-[#2e0a0a] to-[#E81717]', 
+        color: '#C20000', 
+        gradient: 'from-[#C20000] to-[#FF6666]', 
         path: '/bmovie' 
     },
     { 
         id: 'cdrama', 
         name: 'C-DRAMA', 
-        color: '#F7D625', 
-        gradient: 'from-[#2e2a0a] to-[#F7D625]', 
+        color: '#EDB600', 
+        gradient: 'from-[#EDB600] to-[#FFE666]', 
         path: '/cdrama' 
     },
     { 
         id: 'anime', 
         name: 'ANIME', 
         color: '#FF7DE8', 
-        gradient: 'from-[#2e0a26] to-[#FF7DE8]', 
+        gradient: 'from-[#FF7DE8] to-[#FFB3F2]', 
         path: '/anime' 
     }
 ];
@@ -69,9 +69,9 @@ export const GENRE_OPTIONS = [
 export const STATUS_OPTIONS = [
     { value: 'watching', label: 'Watching', color: '#4CAF50' },
     { value: 'completed', label: 'Completed', color: '#2196F3' },
-    { value: 'plan-to-watch', label: 'Plan to Watch', color: '#FFC107' },
+    { value: 'plan-to-watch', label: 'Plan to Watch', color: '#EDB600' },
     { value: 'on-hold', label: 'On Hold', color: '#9E9E9E' },
-    { value: 'dropped', label: 'Dropped', color: '#F44336' }
+    { value: 'dropped', label: 'Dropped', color: '#C20000' }
 ];
 
 export const INITIAL_DATA: WatchItem[] = [
